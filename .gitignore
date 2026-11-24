@@ -1,0 +1,47 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Data (never commit downloaded datasets, filings or indexes)
+data/
+*.csv
+*.parquet
+*.sqlite
+*.db
+chroma_db/
+faiss_index/
+vector_store/
+cache/
+
+# Models / checkpoints / experiment trackers
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+wandb/
+mlruns/
+runs/
+checkpoints/
+outputs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
